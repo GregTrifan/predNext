@@ -35,7 +35,7 @@ jobs:
         id: fmt
       - name: Install openzeppelin-contracts
         run: |
-          forge install OpenZeppelin/openzeppelin-contracts
+          forge install OpenZeppelin/openzeppelin-contracts --no-commit
       - name: Run Forge build
         run: |
           forge build --sizes
