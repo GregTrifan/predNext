@@ -33,7 +33,9 @@ jobs:
         run: |
           forge fmt --check
         id: fmt
-
+      - name: Install openzeppelin-contracts
+        run: |
+          forge install OpenZeppelin/openzeppelin-contracts
       - name: Run Forge build
         run: |
           forge build --sizes
